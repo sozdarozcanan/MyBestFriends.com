@@ -1,0 +1,6 @@
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.Entities\bin\Debug\MyBestFriends.Entities.dll
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.Entities\bin\Debug\MyBestFriends.Entities.pdb
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.Entities\obj\Debug\MyBestFriends.Entities.csproj.CoreCompileInputs.cache
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.Entities\obj\Debug\MyBestFriends.Entities.dll
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.Entities\obj\Debug\MyBestFriends.Entities.pdb
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.Entities\obj\Debug\MyBestFriends.Entities.csprojAssemblyReference.cache

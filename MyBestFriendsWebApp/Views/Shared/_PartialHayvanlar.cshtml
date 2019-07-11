@@ -1,0 +1,15 @@
+﻿@using MyBestFriends.BusinessLayer
+@using MyBestFriends.Entities
+
+@{ 
+    HayvanYonetimi HY = new HayvanYonetimi();
+    List<Hayvan> liste = HY.GetHayvanlar();
+}
+<p class="lead">Hayvanlar</p>
+<div class="list-group">
+    <a href="@Url.Action("Index","Home")" class="list-group-item"><span class="glyphicon glyphicon-arrow-right"></span> Tümü</a>
+    @foreach (Hayvan hyvn in liste)
+    {
+        <a href="/Home/ByHayvan/@hyvn.HayvanID" class="list-group-item"><span class="glyphicon glyphicon-arrow-right"></span> @hyvn.HayvanTuru</a>
+    }   
+</div>

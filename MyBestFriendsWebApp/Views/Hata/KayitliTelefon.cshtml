@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "KayitliTelefon";
+}
+
+<link href="~/Content/login-register.css" rel="stylesheet" />
+
+
+
+<section class="login-info">
+    <div class="container">
+        <div class="row main">
+            <div class="form-header">
+                <h1 class="text-center ">HATA MESAJI </h1>
+            </div>
+            <div class="main-content ">
+                <div class="text-danger">
+                    <h2> <span class="glyphicon glyphicon-alert"></span>&nbsp;&nbsp;&nbsp;Güncelleme işleminde hata</h2>
+                    <hr />
+                    <p class="text-justify">
+                        Girdiğiniz telefon numarası başka bir kullanıcı tarafından kullanılmaktadır.Lütfen farklı bir telefon numarası giriniz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(function () {
+        $("footer").parent().hide();
+        setTimeout(function () {
+            window.location = "/Home/EditProfil";
+        }, 5000);
+    });
+</script>
+
+

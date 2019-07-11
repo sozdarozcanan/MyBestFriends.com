@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "KayitliEmail";
+}
+
+
+@{
+    ViewBag.Title = "Kayitli Email";
+}
+
+<link href="~/Content/login-register.css" rel="stylesheet" />
+
+
+
+<section class="login-info">
+    <div class="container">
+        <div class="row main">
+            <div class="form-header">
+                <h1 class="text-center ">HATA MESAJI </h1>
+            </div>
+            <div class="main-content ">
+                <div class="text-danger">
+                    <h2> <span class="glyphicon glyphicon-alert"></span>&nbsp;&nbsp;&nbsp;Güncelleme işleminde hata</h2>
+                    <hr />
+                    <p class="text-justify">
+                     Girdiğiniz e-posta adresi başka bir kullanıcı tarafından kullanılmaktadır.Lütfen farklı bir e-posta adresi yazınız.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(function () {
+        setTimeout(function () {
+            window.location = "/Home/EditProfil";
+        }, 5000);
+    });
+</script>
+

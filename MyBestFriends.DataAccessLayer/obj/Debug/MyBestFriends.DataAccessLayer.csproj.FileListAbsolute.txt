@@ -1,0 +1,14 @@
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\bin\Debug\MyBestFriends.DataAccessLayer.dll.config
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\bin\Debug\MyBestFriends.DataAccessLayer.dll
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\bin\Debug\MyBestFriends.DataAccessLayer.pdb
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\bin\Debug\MyBestFriends.Entities.dll
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\bin\Debug\MyBestFriends.Entities.pdb
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\obj\Debug\MyBestFriends.DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\obj\Debug\MyBestFriends.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\obj\Debug\MyBestFriends.DataAccessLayer.csproj.CopyComplete
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\obj\Debug\MyBestFriends.DataAccessLayer.dll
+C:\Users\sozda\Desktop\MyBestFriendsSolution\MyBestFriends.DataAccessLayer\obj\Debug\MyBestFriends.DataAccessLayer.pdb

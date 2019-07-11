@@ -1,0 +1,96 @@
+﻿@using MyBestFriends.Entities
+@using MyBestFriends.BusinessLayer
+@model List<Ilan>
+@{
+    IlanYonetimi IY = new IlanYonetimi();
+    List<Ilan> liste;
+    if (Model == null)
+    {
+        liste = IY.getIlanlar();
+    }
+    else
+    {
+        liste = Model;
+    }
+
+}
+@foreach (Ilan ilan in liste)
+{
+    if (TempData["mesaj"] == "Sahiplendirme" && ilan.IlanTuru == true)
+    {
+        TempData["mesaj"] = "Sahiplendirme";
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Images/@ilan.Fotograf" alt="@ilan.Cins.Hayvan.HayvanTuru">
+                <div class="caption">
+                    <h4>
+                        <a href="">
+                            @ilan.Cins.CinsAdi - @ilan.Sehir.SehirAdi
+                        </a>
+                    </h4>
+                    <h6><span class="glyphicon glyphicon-user"></span> @ilan.Kullanici.KullaniciAdiSoyadi <br /><br /><span class="glyphicon glyphicon-time"></span> @ilan.IlanTarihi.ToString("dd.MM.yy HH:mm")</h6>
+                    <h6>
+                        @ilan.Cins.Hayvan.HayvanTuru
+                    </h6>
+                    <h6>
+                        @ViewBag.metin
+                    </h6>
+                    @if (string.IsNullOrEmpty(ilan.Aciklama) == false && ilan.Aciklama.Length > 34)
+                    {
+                        <p>@(ilan.Aciklama.Substring(0, 34) + "...")</p>
+                        <p class="pull-right"> <a href="#" class="btn btn-default btn-sm">devamı <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+                    }
+                    else
+                    {
+                        <p>@ilan.Aciklama</p>
+                    }
+                </div>
+                <div class="ratings">
+                    <p class="pull-right"></p>
+                    <p>
+                        Telefon : @ilan.Kullanici.Telefon
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+    else if (TempData["mesaj"] == "EsArayanlar" && ilan.IlanTuru == false)
+    {
+        TempData["mesaj"] = "EsArayanlar";
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Images/@ilan.Fotograf" alt="@ilan.Cins.Hayvan.HayvanTuru">
+                <div class="caption">
+                    <h4>
+                        <a href="">
+                            @ilan.Cins.CinsAdi - @ilan.Sehir.SehirAdi
+                        </a>
+                    </h4>
+                    <h6><span class="glyphicon glyphicon-user"></span> @ilan.Kullanici.KullaniciAdiSoyadi <br /><br /><span class="glyphicon glyphicon-time"></span> @ilan.IlanTarihi.ToString("dd.MM.yy HH:mm")</h6>
+                    <h6>
+                        @ilan.Cins.Hayvan.HayvanTuru
+                    </h6>
+                    <h6>
+                        @ViewBag.metin
+                    </h6>
+                    @if (string.IsNullOrEmpty(ilan.Aciklama) == false && ilan.Aciklama.Length > 34)
+                    {
+                        <p>@(ilan.Aciklama.Substring(0, 34) + "...")</p>
+                        <p class="pull-right"> <a href="#" class="btn btn-default btn-sm">devamı <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+                    }
+                    else
+                    {
+                        <p>@ilan.Aciklama</p>
+                    }
+                </div>
+                <div class="ratings">
+                    <p class="pull-right"></p>
+                    <p>
+                        Telefon : @ilan.Kullanici.Telefon
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+
+}

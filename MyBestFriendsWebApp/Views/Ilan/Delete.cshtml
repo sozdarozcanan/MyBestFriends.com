@@ -1,0 +1,88 @@
+﻿@model MyBestFriends.Entities.Ilan
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Ilan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cins.CinsAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cins.CinsAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kullanici.KullaniciAdiSoyadi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kullanici.KullaniciAdiSoyadi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sehir.SehirAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sehir.SehirAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aciklama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aciklama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IlanTarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IlanTarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cinsiyet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cinsiyet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IlanTuru)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IlanTuru)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fotograf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fotograf)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

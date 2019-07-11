@@ -1,0 +1,97 @@
+﻿ @model IEnumerable<MyBestFriends.Entities.Ilan>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+    @Html.ActionLink("İlan Oluştur", "Create",null, new { @class = "btn"})
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Sehir.SehirAdi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model.Cins.Hayvan.HayvanTuru)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cins.CinsAdi)
+
+        </th>
+        <th>
+
+            @Html.DisplayNameFor(model => model.Cinsiyet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IlanTarihi)
+
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IlanTuru)
+
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.Aciklama)
+        </th>
+
+
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sehir.SehirAdi)
+        </td>
+        <th>
+            @Html.DisplayFor(modelItem => item.Cins.Hayvan.HayvanTuru)
+        </th>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cins.CinsAdi)
+        </td>
+        <td>
+            @if (item.Cinsiyet == true)
+            {
+                @Html.LabelFor(modelItem => item.Cinsiyet, "Erkek")
+            }
+            else
+            {
+                @Html.LabelFor(modelItem => item.Cinsiyet, "Dişi")
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IlanTarihi)
+        </td>
+
+        <td>
+            @if (item.IlanTuru == true)
+            {
+                @Html.LabelFor(modelItem => item.IlanTuru, "Sahiplendirme")
+            }
+            else
+            {
+                @Html.LabelFor(modelItem => item.IlanTuru, "Eş Arayanlar")
+            }
+        </td>
+
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Aciklama)
+        </td>
+
+
+
+        <td>
+            @Html.ActionLink("Düzenle", "Edit", new { id = item.IlanID }) |          
+            @Html.ActionLink("Sil", "Delete", new { id = item.IlanID })
+        </td>
+    </tr>
+}
+
+</table>
